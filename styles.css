@@ -1,0 +1,289 @@
+/* Estilos generales --------------------------------------------------------------------------------------------------------------*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+}
+
+#menu-container, #character-block-container, 
+#character-promoted-container, #promotions-container,
+#footer, #information-container, #main-promotion-container{
+    display: flex;
+}
+
+/* Image styles ---------------------------------------------------------------------------------------------------------------------*/
+
+img{
+    width: 250px;
+}
+
+img:first-child{
+    width: 300px;
+    margin-left: 20px;
+}
+
+/* Image zoom */
+img{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+img:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+/* Menu styles ----------------------------------------------------------------------------------------------------------------------*/
+
+#menu-container{
+    height: 80px;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-content: center;
+    background-color: black;
+    color: white;
+    padding-left: 42px;
+    position: fixed;
+}
+
+a:first-child{
+    transition: 0.2s;
+}
+
+a:first-child:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+nav{
+    align-content: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+li{
+    display: inline-block;
+    margin-right: 40px;
+}
+
+li{
+    transition: 0.2s;
+}
+
+li:hover{
+    transform: scale(1.4);
+    transition: 0.2s;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: rgb(255, 40, 119);
+}
+
+/* Main promotion section styles --------------------------------------------------------------------------------------------------- */
+
+#main-promotion-container{
+    height: 620px;
+    background-image: url(img/cc.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 80px;
+    font-size: 24px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-promotion-container div button{
+    width: 120px;
+    height: 44px;
+    font-size: 20px;
+    border: solid rgb(17, 33, 255) 3px;
+    border-radius: 20px;
+    background-color:  rgb(255, 156, 34);
+    color: rgb(17, 33, 255);
+}
+
+#main-promotion-container div{
+    display: flex;
+    width: 420px;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    font-size: 24px;
+    color: white;
+}
+
+#main-promotion-container img{
+    width: 320px;
+    margin: 50px 0px 50px 70px;
+}
+
+#main-promotion-container div h2{
+    margin: 0px 0px 20px 0px;
+}
+
+/* Collection section styles --------------------------------------------------------------------------------------------------------*/
+
+#character-list-container{
+    height: 1224px;
+    text-align: center;
+    align-content: center;
+    background-color: rgb(23, 255, 42);
+}
+
+#character-list-container h2{
+    margin-bottom: 52px;
+    color: rgb(163, 34, 255);
+}
+
+#character-list-container h2{
+    transition: 0.2s;
+}
+
+#character-list-container h2:hover{
+    transform: scale(1.5);
+    transition: 0.2s;
+    color: rgb(255, 40, 119);
+}
+
+/* Block container styles */
+#character-block-container{
+    display: flex;
+    height: 1020px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Character block styles */
+#character-block-container div{
+    width: 320px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+#character-block-container div p{
+    text-align: justify;
+}
+
+#character-block-container div button{
+    width: 80px;
+    height: 24px;
+    margin-bottom: 34px;
+    border: solid rgb(17, 33, 255) 3px;
+    border-radius: 10px;
+    background-color: rgb(95, 196, 255);
+}
+
+button{
+    transition: 0.2s;
+}
+
+button:hover{
+    transform: scale(1.5);
+    transition: 0.2s;
+}
+
+/* Character promoted section styles ---------------------------------------------------------------------------------------------- */
+
+#character-promoted-container{
+    background-color: rgb(163, 34, 255);
+    align-items: center;
+    justify-content: center;
+}
+
+
+#character-promoted-container div{
+    display: flex;
+    width: 420px;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    font-size: 24px;
+    color: white;
+}
+
+#character-promoted-container div button{
+    width: 120px;
+    height: 44px;
+    font-size: 20px;
+    border: solid rgb(17, 33, 255) 3px;
+    border-radius: 20px;
+    background-color:  rgb(255, 156, 34);;
+}
+
+#character-promoted-container img{
+    width: 420px;
+    margin: 50px 0px 50px 70px;
+}
+
+#character-promoted-container div h2{
+    margin: 0px 0px 20px 0px;
+}
+
+/* Promotions section styles ------------------------------------------------------------------------------------------------------ */
+
+#promotions-container{
+    flex-flow: row wrap;
+    font-size: 42px;
+}
+
+#promotions-container div{
+    display: flex;
+    width: 50%;
+    height: 420px;
+    justify-content: center;
+    align-items: center;
+}
+
+#pb1{
+    background-image: url(img/ca.jpg);
+}
+
+#pb2{
+    background-image: url(img/cb.jpg);
+}
+
+#pb3{
+    background-image: url(img/cc.jpg);
+}
+
+#pb4{
+    background-image: url(img/cd.jpg);
+}
+
+#pb1, #pb2, #pb3, #pb4{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* Information section styles ------------------------------------------------------------------------------------------------------ */
+
+#information-container{
+    height: 420px;
+    background-color: rgb(9, 50, 111);
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer styles ------------------------------------------------------------------------------------------------------------------- */
+
+#footer{
+    height: 120px;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
